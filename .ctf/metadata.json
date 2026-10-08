@@ -1,0 +1,14 @@
+{
+  "title": "OWASP SKF WebSocket Message Manipulation",
+  "description": "A Flask chat page that sends messages over a WebSocket at /echo. The server echoes each message, logs it and renders the history in the page.",
+  "question": "Tamper with the WebSocket messages to inject content that runs script in other users' browsers.",
+  "category": "WEB",
+  "difficulty": 2,
+  "evidence_kind": "SECRET",
+  "capabilities": [
+    "websocket",
+    "xss",
+    "message-manipulation",
+    "client-side"
+  ]
+}
