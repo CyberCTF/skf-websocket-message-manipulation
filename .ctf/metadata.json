@@ -4,11 +4,5 @@
   "question": "Tamper with the WebSocket messages to inject content that runs script in other users' browsers.",
   "category": "WEB",
   "difficulty": 2,
-  "evidence_kind": "SECRET",
-  "capabilities": [
-    "websocket",
-    "xss",
-    "message-manipulation",
-    "client-side"
-  ]
+  "evidence_kind": "SECRET"
 }
