@@ -1,0 +1,43 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Read the flag",
+      "prompt": "Tamper with the WebSocket messages and retrieve the flag (/ctf/flag).",
+      "check": {
+        "evidence": "SECRET",
+        "format": "FLAG{%s}"
+      },
+      "dev": "FLAG{dev-skf-websocket-message-manipulation}",
+      "hints": [
+        "Messages go over a WebSocket and the history is rendered in the page.",
+        "Intercept WebSocket frames with your proxy and see what the server trusts."
+      ],
+      "steps": [
+        {
+          "key": "route",
+          "title": "Find the socket",
+          "prompt": "Which path serves the WebSocket? (path)",
+          "check": {
+            "answer": [
+              "/echo",
+              "echo"
+            ]
+          }
+        },
+        {
+          "key": "class",
+          "title": "Name the outcome",
+          "prompt": "Which client-side vulnerability class does the tampering lead to?",
+          "check": {
+            "answer": [
+              "xss",
+              "cross-site scripting",
+              "stored xss"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
