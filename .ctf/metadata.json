@@ -1,8 +1,11 @@
 {
+  "project_name": "cyberlabs-skf-websocket-message-manipulation",
+  "slug": "skf-websocket-message-manipulation",
   "title": "OWASP SKF WebSocket Message Manipulation",
   "description": "A Flask chat page that sends messages over a WebSocket at /echo. The server echoes each message, logs it and renders the history in the page.",
-  "question": "Tamper with the WebSocket messages to inject content that runs script in other users' browsers. The flag is in /ctf/flag; client-side lab.",
-  "category": "WEB",
+  "category": "web",
   "difficulty": 2,
-  "evidence_kind": "SECRET"
+  "evidence_kind": "SECRET",
+  "capabilities": [],
+  "question": "Tamper with the WebSocket messages to inject content that runs script in other users' browsers. The flag is in /ctf/flag; client-side lab."
 }
